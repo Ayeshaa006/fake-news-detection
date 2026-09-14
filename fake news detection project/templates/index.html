@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fake News Detector AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>📰 Fake News Detector AI</h1>
+    <div class="container">
+        <form action="/predict" method="post">
+            <label>Enter News Text or Title:</label>
+            <textarea name="news_text" rows="8" style="width:100%;" required></textarea>
+            <button type="submit">🔍 Analyze News</button>
+        </form>
+        {% if prediction_text %}
+            <h2 style="margin-top:20px; color: #00ffcc;">{{ prediction_text }}</h2>
+        {% endif %}
+    </div>
+</body>
+</html>

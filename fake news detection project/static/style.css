@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #0f0f0f; /* Dark Background */
+    color: #fff;
+    min-height: 100vh;
+    padding: 20px;
+}
+h1 {
+    margin-top: 30px;
+    font-size: 2.5rem;
+    color: #00ffcc; /* Neon Cyan */
+    text-shadow: 0 0 15px #00ffcc, 0 0 30px #00ffcc;
+}
+.subtitle {
+    margin-top: 10px;
+    color: #aaa;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+.container {
+    margin: 30px auto;
+    padding: 30px 40px;
+    border: 2px solid #00ffcc;
+    border-radius: 15px;
+    display: inline-block;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 0 20px #00ffcc55;
+    background: #111;
+}
+label {
+    display: block;
+    text-align: left;
+    color: #00ffcc;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+textarea {
+    width: 100%;
+    padding: 12px;
+    background: #1a1a1a;
+    border: 1.5px solid #00ffcc;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s;
+    box-shadow: 0 0 8px #00ffcc44;
+    resize: vertical;
+}
+textarea:focus {
+    border-color: #ff66cc; /* Focus hone par Pink highlight */
+    box-shadow: 0 0 15px #ff66cc;
+}
+button {
+    margin-top: 25px;
+    width: 100%;
+    padding: 15px;
+    background: transparent;
+    border: 2px solid #00ffcc;
+    color: #00ffcc;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.4s;
+    text-transform: uppercase;
+}
+button:hover {
+    background: #00ffcc;
+    color: #000;
+    box-shadow: 0 0 20px #00ffcc;
+}
+.result {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: #1a1a1a;
+    border: 1px solid #444;
+}
+.real {
+    color: #4ade80; /* Green for Real News */
+    text-shadow: 0 0 10px #4ade80;
+}
+.fake {
+    color: #f87171; /* Red for Fake News */
+    text-shadow: 0 0 10px #f87171;
+}
